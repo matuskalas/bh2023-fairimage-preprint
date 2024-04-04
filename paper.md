@@ -1,11 +1,12 @@
 ---
 title: 'Enhancing the image analysis community in Galaxy'
-title_short: 'Image Analysis with Galaxy'
+title_short: 'Image analysis with Galaxy'
 tags:
-  - imaging
-  - image analysis
-  - image processing
-  - galaxy
+  - Imaging
+  - Image analysis
+  - Image processing
+  - Interdisciplinary
+  - Galaxy
 authors:
   - name: Leonid Kostrykin
     affiliation: 1,2
@@ -13,7 +14,7 @@ authors:
   - name: Tatiana Woller
     affiliation: 3
     orcid: 0000-0002-6958-6498
-  - name: Matus Kalas
+  - name: Matúš Kalaš
     affiliation: 4
     orcid: 0000-0002-1509-4981
   - name: Bugra Özdemir
@@ -59,13 +60,13 @@ affiliations:
     index: 8
   - name: Université Clermont Auvergne, AuBi platform, F-63000 Clermont-Ferrand, France 
     index: 9
-date: 13 December 2023
+date: 4 April 2024
 cito-bibliography: paper.bib
-event: BioHackathonn2023
-biohackathon_name: "BioHackathon 2023"
+event: BH23EU
+biohackathon_name: "BioHackathon Europe 2023"
 biohackathon_url:   "https://biohackathon-europe.org/"
 biohackathon_location: "Barcelona, Spain, 2023"
-group: project 16 / Enhancing the image analysis community in Galaxy 
+group: Project 16 - Enhancing the image analysis community in Galaxy 
 # URL to project git repo --- should contain the actual paper.md:
 git_url: https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/16
 # This is the short authors description that is used at the
