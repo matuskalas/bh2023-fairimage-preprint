@@ -70,7 +70,7 @@ group: project 16 / Enhancing the image analysis community in Galaxy
 git_url: https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/16
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: 
+authors_short: Leonid Kostrykin, Tatiana Woller, \emph{et al.}
 ---
 
 
