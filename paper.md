@@ -252,17 +252,18 @@ We are aware of the following limitations of our conventions for tool naming, to
 
 # Acknowledgements
 
-We thank the contributions from Project 25. The authors utilised the language model ChatGPT developed by OpenAI for assistance in the structuring and drafting of this text.
+This work was developed as part of BioHackathon Europe 2023.
+We thank the contributions from Project 25.
+This work was supported by [ELIXIR](https://elixir-europe.org), the research infrastructure for life science data.
+The authors utilised the language model ChatGPT developed by OpenAI for assistance in the structuring and drafting of this text.
 
 
 # References
 
-- [Galaxy project](https://galaxyproject.org)
+TODO! Missing citations:
+
 - [Euro-BioImaging](https://www.eurobioimaging.eu/)
-- [BioImage Model Zoo (BMZ)](https://bioimage.io/#/)
-- [EDAM Bioimaging](https://bioportal.bioontology.org/ontologies/EDAM-BIOIMAGING)
 - [Zarr](https://zarr.readthedocs.io/en/stable/spec.html#specifications)
-- [OME-Zarr](https://ngff.openmicroscopy.org/latest/)
 - [NCZarr](https://www.unidata.ucar.edu/blogs/developer/en/entry/netcdf-zarr-data-model-specification)
 - [GeoZarr](https://github.com/zarr-developers/geozarr-spec)
 
