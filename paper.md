@@ -262,7 +262,6 @@ The authors utilised the language model ChatGPT developed by OpenAI for assistan
 
 TODO! Missing citations:
 
-- [Euro-BioImaging](https://www.eurobioimaging.eu/)
 - [Zarr](https://zarr.readthedocs.io/en/stable/spec.html#specifications)
 - [NCZarr](https://www.unidata.ucar.edu/blogs/developer/en/entry/netcdf-zarr-data-model-specification)
 - [GeoZarr](https://github.com/zarr-developers/geozarr-spec)
