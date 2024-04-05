@@ -102,7 +102,7 @@ The initiative started in summer 2023 when the group gathered around a newly-cre
 
 For the BioHackathon 2023, we set a number of multifaceted goals:
 
-- Gather all the existing resources for image data management and analysis in Galaxy (_e.g._, tools available in the [Galaxy ToolShed](https://toolshed.g2.bx.psu.edu/) [@usesDataFrom:toolshed], training materials published in the [Galaxy Training Network](https://training.galaxyproject.org/) [@usesDataFrom:gtn], and workflows collected in the [WorkflowHub](https://workflowhub.eu/) [@usesDataFrom:workflowhub]).
+- Gather all the existing resources for image data management and analysis in Galaxy (_e.g._, tools available in the [Galaxy ToolShed](https://toolshed.g2.bx.psu.edu/) [@usesDataFrom:citesAsAuthority:toolshed], training materials published in the [Galaxy Training Network](https://training.galaxyproject.org/) [@usesDataFrom:citesAsAuthority:gtn], and workflows collected in the [WorkflowHub](https://workflowhub.eu/) [@usesDataFrom:citesAsAuthority:workflowhub]).
 - Create a list of tools widely used in the image analysis field that are not yet integrated into Galaxy.
 - Annotate the existing image analysis tools that are lacking annotations with [EDAM](https://bioportal.bioontology.org/ontologies/EDAM) [@citesAsAuthority:extends:edam] and especially the [EDAM Bioimaging](https://bioportal.bioontology.org/ontologies/EDAM-BIOIMAGING) ontology [@citesAsAuthority:usesDataFrom:extends:edamBioimaging; @usesDataFrom:edamBioimagingAlpha06].
 - Create a community-of-practice page in the [Galaxy Community Hub](https://galaxyproject.org/).
