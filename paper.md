@@ -192,16 +192,16 @@ Generally, the name of Galaxy tools in our community should be expressive and co
 If a Galaxy tool is a thin tool wrapper (e.g, part of a major tool suite), then the name of the wrapped tool (and only the name of the wrapped tool, subsequent to the term “with” as in “with Bioformats”) should be used as the description of the tool (further examples include “with CellProfiler”, “with ImageJ2”, “with ImageMagick”, “with SpyBOAT”, “with SuperDSM”). This ensures that the tool is found by typing the name of the wrapped tool into the “Search” field on Galaxy EU. The tool description should be empty if a tool is either not part of a major tool suite, or the main functionality of the tool is implemented in the wrapper.
 
 ### Annotations 
-We point out that there is a global list of precedential [Bio.tools](https://bio.tools/) annotations in Galaxy which outweighs the annotations made in the XML specification of a Galaxy tool (and thus the annotations of a tool reported within the web interface of Galaxy might be divergent). However, since the precedential annotations are subject to possible changes and to avoid redundant work, we do not aim to reflect those in our specifications (those which we make in the XML specifications of Galaxy tools).
+We point out that there is a global list of precedential [Bio.tools](https://bio.tools/) [@citesAsAuthority:usesDataFrom:biotools] annotations in Galaxy, which outweighs the annotations made in the XML specification of a Galaxy tool (and thus the annotations of a tool reported within the web interface of Galaxy might be divergent). However, since the precedential annotations are subject to possible changes and to avoid redundant work, we do not aim to reflect those in our specifications (those which we make in the XML specifications of Galaxy tools).
 
 
 ## Tool annotation
 
-The annotations of tools within the Galaxy Image Community involves  the use of the EDAM ontology and [Bio.tools](https://bio.tools/). To recognize the role of [BIII](https://biii.eu/) in the imaging tool landscape, we agreed to use [BIII](https://biii.eu/), considering its integration with EDAM-Bioimaging. 
+The annotations of tools within the Galaxy Image Community involves the use of the EDAM ontology and [Bio.tools](https://bio.tools/). To recognize the role of [BioImage Informatics Index (BIII)](https://biii.eu/) as the registry of tools, workflows, training, and example data for bioimage analysis [@citesAsAuthority:usesDataFrom:bioimageWorkflows], we agreed to use [BIII](https://biii.eu/), considering its use of annotations with EDAM Bioimaging.
 
 To fully reflect this decision, we included a new metadata field in the Galaxy tool wrappers that enables the annotation of tools using [BIII](https://biii.eu/) (see [PR](https://github.com/galaxyproject/galaxy/pull/16952)).
 
-We annotated all the tools with [Bio.tools](https://bio.tools/), EDAM and [BIII](https://biii.eu/) and adhered to the agreed conventions in the following pull requests:
+We annotated all the tools with [Bio.tools](https://bio.tools/), EDAM, and [BIII](https://biii.eu/), and adhered to the agreed conventions in the following pull requests:
 
 - https://github.com/BMCV/galaxy-image-analysis/pull/71
 - https://github.com/bgruening/galaxytools/pull/1346 
@@ -209,13 +209,13 @@ We annotated all the tools with [Bio.tools](https://bio.tools/), EDAM and [BIII]
 - https://github.com/galaxyproject/tools-iuc/pull/5572
 - https://github.com/usegalaxy-eu/usegalaxy-eu-tools/pull/641
 
-Thanks to these annotations and in collaboration with Project 25 _" Increasing the findability, visibility, and impact of Galaxy tools for specialised scientific Communities"_, we gathered a list of tools that are of interest for the imaging community.
+Thanks to these annotations and in collaboration with Project 25 _" Increasing the findability, visibility, and impact of Galaxy tools for specialised scientific Communities"_ [@usesMethodIn:obtainsSupportFrom:project25], we gathered a list of tools that are of interest for the imaging community.
 
-We also started the discussion to facilitate the [bio.tools](https://bio.tools/) [@biotools] annotations when wrapping a tool for Galaxy using the [Galaxy Language Server](https://github.com/galaxyproject/galaxy-language-server) (see [issue](https://github.com/galaxyproject/galaxy-language-server/issues/250)).
+We also started the discussion to facilitate the [Bio.tools](https://bio.tools/) annotations when wrapping a tool for Galaxy using the [Galaxy Language Server](https://github.com/galaxyproject/galaxy-language-server) (see [issue](https://github.com/galaxyproject/galaxy-language-server/issues/250)).
 
 ## Data management tools
 
-Improving data management is crucial when it comes to improving the image analysis experience in Galaxy. During the BioHackathon, we worked on adding support for Zarr ([PR](https://github.com/usegalaxy-eu/galaxy/pull/203)) and a beta version of OME-Zarr ([PR](https://github.com/galaxyproject/galaxy/issues/16862)) [@OMEzarr], with plans for adding metadata information and checks in the future. This would also facilitate adding support for other community-driven standards such as NCZarr support.
+Improving data management is crucial when it comes to improving the image analysis experience in Galaxy. During the BioHackathon, we worked on adding support for the [Zarr format](https://zarr.readthedocs.io/en/stable/spec.html#specifications) ([PR](https://github.com/usegalaxy-eu/galaxy/pull/203)), and a beta version of OME-Zarr ([PR](https://github.com/galaxyproject/galaxy/issues/16862)) [@citesAsAuthority:usesMethodIn:OMEzarr], with plans for adding metadata information and checks in the future. This would also facilitate adding support for other community-driven standards, such as [NCZarr](https://www.unidata.ucar.edu/blogs/developer/en/entry/netcdf-zarr-data-model-specification) and [GeoZarr](https://github.com/zarr-developers/geozarr-spec).
 
 Tools to convert NetCDF to NCZarr and various proprietary image file formats to OME-Zarr were added ([PR](https://github.com/NordicESMhub/galaxy-tools/pull/64)), addressing specific image analysis data formats for better data handling in Galaxy.
 
@@ -223,13 +223,13 @@ In addition, a tool to fetch image data directly from the [BioImage Archive (BIA
 
 ## AI-powered image analysis
 
-The integration of AI-powered image analysis in Galaxy involved leveraging models from the [BioImage Model Zoo (BMZ)](https://bioimage.io/#/) [@BMZ] and conducting an analysis of [ZeroCostDL4Mic](https://github.com/HenriquesLab/ZeroCostDL4Mic) dependencies. 
+The integration of AI-powered image analysis in Galaxy involved leveraging models from the [BioImage Model Zoo (BMZ)](https://bioimage.io/#/) [@citesAsAuthority:usesDataFrom:BMZ] and conducting an analysis of [ZeroCostDL4Mic](https://github.com/HenriquesLab/ZeroCostDL4Mic) dependencies. 
 
 We explored the possibility to consume models from the [BMZ](https://bioimage.io/#/) in Galaxy, with specific examples for live cell segmentation and nucleus segmentation boundary models. 
 
 ## Community
 
-We updated the Galaxy subdomain (https://imaging.usegalaxy.eu) to contain the list of training materials related to imaging ([PR](https://github.com/usegalaxy-eu/website/pull/1165)). We also agreed on renaming our community to “image community”, thus also renaming the subdomain to image.usegalaxy.eu.
+We updated the Galaxy subdomain [imaging.usegalaxy.eu](https://imaging.usegalaxy.eu) to contain the list of training materials related to imaging ([PR](https://github.com/usegalaxy-eu/website/pull/1165)). We also agreed on renaming our community to “image community”, thus also renaming the subdomain to [image.usegalaxy.eu](https://image.usegalaxy.eu).
 
 
 # Discussion
@@ -253,16 +253,9 @@ We are aware of the following limitations of our conventions for tool naming, to
 # Acknowledgements
 
 This work was developed as part of BioHackathon Europe 2023.
-We thank the contributions from Project 25.
+We thank the contributions from Project 25 [@usesMethodIn:obtainsSupportFrom:project25].
 This work was supported by [ELIXIR](https://elixir-europe.org), the research infrastructure for life science data.
 The authors utilised the language model ChatGPT developed by OpenAI for assistance in the structuring and drafting of this text.
 
 
 # References
-
-TODO! Missing citations:
-
-- [Zarr](https://zarr.readthedocs.io/en/stable/spec.html#specifications)
-- [NCZarr](https://www.unidata.ucar.edu/blogs/developer/en/entry/netcdf-zarr-data-model-specification)
-- [GeoZarr](https://github.com/zarr-developers/geozarr-spec)
-
