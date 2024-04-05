@@ -68,7 +68,7 @@ biohackathon_url:   "https://biohackathon-europe.org/"
 biohackathon_location: "Barcelona, Spain, 2023"
 group: Project 16 - Enhancing the image analysis community in Galaxy 
 # URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/16
+git_url: https://github.com/beatrizserrano/bh2023-preprint
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
 authors_short: Leonid Kostrykin, Tatiana Woller, \emph{et al.}
@@ -90,22 +90,22 @@ pasting above link (or yours) in
 
 # Introduction
 
-The [BioHackathon Europe](https://biohackathon-europe.org/) took place in Barcelona in November 2023, where a group of people interested in image data analysis gathered around the project **_"Enhancing the image analysis community in Galaxy"_**.
+The 2023 edition of [BioHackathon Europe](https://biohackathon-europe.org/) took place in Barcelona in November last year, where a group of people interested in image data analysis gathered around the project nr. 16, **_"Enhancing the image analysis community in Galaxy"_**.
 
-Although the [Galaxy platform](http://galaxyproject.org) [@Galaxy] has a strong presence in omics fields like genomics and proteomics, it has yet to fully establish itself in the imaging community. At the moment, **efforts** to integrate tools and create workflows for image analysis in Galaxy **are scattered** across research fields and locations.
+Although the [Galaxy platform](http://galaxyproject.org) [@citesAsAuthority:Galaxy] has a strong presence in omics fields like genomics and proteomics, it has yet to fully establish itself in the imaging community. This would be of a great value to the scientific communities working with image data, as Galaxy provides free and open, democratised access to large computational resources, via common user-friendly interfaces (GUI and API), and with built-in provenance for transparency and reproducibility, fostering FAIR scientific workflows [@citesAsSourceDocument:galaxyFAIR]. However at the moment, **efforts** to integrate tools and create workflows for image analysis in Galaxy **are scattered** across research fields and locations.
 
 The vision of this project is not only to join those efforts but also to go beyond by creating **cross-discipline image analysis resources**. By fostering collaboration among scientists and enthusiasts from different fields we aim to create a dynamic community around image data management and analysis.
 
-The initiative started in summer 2023 when the group gathered around a newly-created **Expert Group on _FAIR Image Data Workflows_** within [Euro-BioImaging](https://www.eurobioimaging.eu/), the European Research Infrastructure offering open access to imaging technologies, training, and data services. Additionally, it aims to tap into the capabilities of [Simula Research Laboratory](https://www.simula.no/), a Norwegian non-profit research organization that addresses crucial scientific and engineering problems with a societal impact, focusing on five primary ICT research areas: Communication Systems, Cryptography, Scientific Computing, Software Engineering, and Machine Learning. Together, these entities will foster the development of a community dedicated to crafting FAIR computational workflows specifically tailored for image analysis.
+The initiative started in summer 2023 when the group gathered around a newly-created **Expert Group on _FAIR Image Data Workflows_** within [Euro-BioImaging](https://www.eurobioimaging.eu/), the European Research Infrastructure offering open access to (bio)imaging technologies, training, and data services. Additionally, it aims to tap into the capabilities of [Simula Research Laboratory](https://www.simula.no/), a Norwegian non-profit research organisation that addresses crucial scientific and engineering problems with a societal impact, focusing on five primary ICT research areas: Communication systems, Cryptography, Scientific computing, Software engineering, and Machine learning. Together, these entities will foster the development of a community dedicated to crafting FAIR computational workflows specifically tailored for image analysis.
 
 ### Project goals
 
 For the BioHackathon 2023, we set a number of multifaceted goals:
 
-- Gather all the existing resources for image data management and analysis in Galaxy (e.g., tools available in the [Galaxy ToolShed](https://toolshed.g2.bx.psu.edu/), training materials published in the [Galaxy Training Network](https://training.galaxyproject.org/) [@gtn], and workflows collected in the [WorkflowHub](https://workflowhub.eu/) [@workflowhub]).
+- Gather all the existing resources for image data management and analysis in Galaxy (_e.g._, tools available in the [Galaxy ToolShed](https://toolshed.g2.bx.psu.edu/) [@usesDataFrom:toolshed], training materials published in the [Galaxy Training Network](https://training.galaxyproject.org/) [@usesDataFrom:gtn], and workflows collected in the [WorkflowHub](https://workflowhub.eu/) [@usesDataFrom:workflowhub]).
 - Create a list of tools widely used in the image analysis field that are not yet integrated into Galaxy.
-- Annotate the existing image analysis tools that are lacking annotations with the [EDAM Bioimaging ontology](https://bioportal.bioontology.org/ontologies/EDAM-BIOIMAGING).
-- Create a community of practice page in the [Galaxy Community Hub](https://galaxyproject.org/).
+- Annotate the existing image analysis tools that are lacking annotations with [EDAM](https://bioportal.bioontology.org/ontologies/EDAM) [@citesAsAuthority:extends:edam] and especially the [EDAM Bioimaging ontology](https://bioportal.bioontology.org/ontologies/EDAM-BIOIMAGING) [@citesAsAuthority:usesDataFrom:extends:edamBioimaging; @usesDataFrom:edamBioimagingAlpha06].
+- Create a community-of-practice page in the [Galaxy Community Hub](https://galaxyproject.org/).
 - Establish community practices and decide on regular interactions.
 
 
