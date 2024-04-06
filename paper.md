@@ -92,11 +92,11 @@ pasting above link (or yours) in
 
 The 2023 edition of [BioHackathon Europe](https://biohackathon-europe.org/) took place in Barcelona in November last year, where a group of people interested in image data analysis gathered around the project nr. 16, **_"Enhancing the image analysis community in Galaxy"_**.
 
-Although the [Galaxy platform](http://galaxyproject.org) [@citesAsAuthority:extends:Galaxy] has a strong presence in omics fields like genomics and proteomics, it has yet to fully establish itself in the imaging community. This would be of a great value to the scientific communities working with image data, as Galaxy provides free and open, democratised access to large computational resources, via common user-friendly interfaces (GUI and API), and with built-in provenance for transparency and reproducibility, fostering FAIR scientific workflows [@citesAsSourceDocument:galaxyFAIR]. However at the moment, **efforts** to integrate tools and create workflows for image analysis in Galaxy **are scattered** across research fields and locations.
+Although the [Galaxy platform](http://galaxyproject.org) [@citesAsAuthority:extends:Galaxy] has a strong presence in omics fields like genomics and proteomics, it has yet to establish itself in the imaging community fully. This would be of great value to the scientific communities working with image data, as Galaxy provides free and open, democratised access to extensive computational resources, via common user-friendly interfaces (GUI and API), and with built-in provenance for transparency and reproducibility, fostering FAIR scientific workflows [@citesAsSourceDocument:galaxyFAIR]. However, at the moment, **efforts** to integrate tools and create workflows for image analysis in Galaxy **are scattered** across research fields and locations.
 
-The vision of this project is not only to join those efforts but also to go beyond by creating **cross-discipline image analysis resources**. By fostering collaboration among scientists and enthusiasts from different fields we aim to create a dynamic community around image data management and analysis.
+This project's vision is to join those efforts and go beyond by creating **cross-discipline image analysis resources**. By fostering collaboration among scientists and enthusiasts from different fields, we aim to create a dynamic community that focuses on image data management and analysis.
 
-The initiative started in summer 2023 when the group gathered around a newly-created **Expert Group on _FAIR Image Data Workflows_** within [Euro-BioImaging](https://www.eurobioimaging.eu/), the European Research Infrastructure offering open access to (bio)imaging technologies, training, and data services. Additionally, it aims to tap into the capabilities of [Simula Research Laboratory](https://www.simula.no/), a Norwegian non-profit research organisation that addresses crucial scientific and engineering problems with a societal impact, focusing on five primary ICT research areas: Communication systems, Cryptography, Scientific computing, Software engineering, and Machine learning. Together, these entities will foster the development of a community dedicated to crafting FAIR computational workflows specifically tailored for image analysis.
+The initiative started in the summer of 2023 when the group gathered around a newly-created **Expert Group on _FAIR Image Data Workflows_** within [Euro-BioImaging](https://www.eurobioimaging.eu/), the European Research Infrastructure offering open access to (bio)imaging technologies, training, and data services. Additionally, it aims to tap into the capabilities of [Simula Research Laboratory](https://www.simula.no/). This Norwegian non-profit research organisation addresses crucial scientific and engineering problems with a societal impact, focusing on five primary ICT research areas: Communication systems, Cryptography, Scientific computing, Software engineering, and Machine learning. Together, these entities will foster the development of a community dedicated to crafting FAIR computational workflows specifically tailored for image analysis.
 
 ### Project goals
 
@@ -111,7 +111,7 @@ For the BioHackathon 2023, we set a number of multifaceted goals:
 
 # Results
 
-In this section, we discuss the achievements within the BioHackathon aligning them with the project goals. We explore the progress made addressing conventions, tool renaming, tool annotation, the identification of tools not available in Galaxy, together with image data management and image analysis tools.
+In this section, we discuss the achievements within the BioHackathon, aligning them with the project goals. We explore the progress made addressing conventions, tool renaming, tool annotation, and the identification of tools not available in Galaxy, together with image data management and image analysis tools.
 
 ```mermaid
 graph TD;
@@ -125,14 +125,14 @@ graph TD;
 
 ## Landscape analysis of image analysis and image processing tools in Galaxy
 
-The current state of image analysis and image processing tools within Galaxy, as of October 13, 2023, reveals a landscape that is both extensive and diverse. A comprehensive overview provides valuable insights into the existing ecosystem and areas that need to be enhanced.
+The current state of image analysis and image processing tools within Galaxy, as of October 13, 2023, reveals an extensive and diverse landscape. A comprehensive overview provides valuable insights into the existing ecosystem and areas that need to be enhanced.
 
 ### Tool Statistics
 
 ![Distribution of tools across repositories](https://hackmd.io/_uploads/B1RQLDUHT.png)
 
 - **Tool count**: The _"Imaging"_ category on Galaxy Europe lists 101 tools.
-- **Contributors**: Approximately 23 contributors have been involved in adding and maintaining these tools.
+- **Contributors**: Approximately 23 contributors have added and maintained these tools.
 - **Repositories**: The tools are distributed across 5 different GitHub repositories, presenting a need for structuration and organization.
 - **Categorization challenges**: Some tools with relevance to image analysis are found in the "Interactive" category, indicating a potential need for reclassification and structure clarification.
 
@@ -155,7 +155,7 @@ During the BioHackathon, we reached an agreement on a recommended naming scheme 
 
 #### Example 2: Low-level vs. high-level tools
 
-The distinction between low-level and high-level tools highlights the diverse needs in the Galaxy user community. Advanced users, with a good understanding of image analysis, benefit from the flexibility and control offered by low-level tools. On the other hand, users with varying levels of expertise, including those less familiar with image analysis, find high-level tools to be easier and efficient. This duality in tool design acknowledges the heterogeneous user base within the Galaxy community. 
+The distinction between low-level and high-level tools highlights the diverse needs of the Galaxy user community. Advanced users, with a good understanding of image analysis, benefit from the flexibility and control offered by low-level tools. On the other hand, users with varying levels of expertise, including those less familiar with image analysis, find high-level tools to be more accessible and efficient. This duality in tool design acknowledges the heterogeneous user base within the Galaxy community. 
 
 
 #### Example 3: Tools with unclear goals
@@ -171,14 +171,14 @@ Some tools within the Galaxy ecosystem have similar purposes but often originate
 
 #### Example 5: Lack of tool interoperability
 
-Incompatibilities between tools, particularly concerning input formats and inconsistent tool IDs, were identified. For example, tools like _Count Objects_ historically accepted only TIFF inputs while others, like _Concatenate images_ exclusively accepted binary images without apparent justification. To enhance user experience and interoperability, a suggestion was made for tools to universally support formats such as TIFF and PNG. 
+Incompatibilities between tools, particularly concerning input formats and inconsistent tool IDs, were identified. For example, tools like _Count Objects_ historically accepted only TIFF inputs while others, like _Concatenate images_ exclusively accepted binary images without apparent justification. To enhance user experience and interoperability, a suggestion was made for tools to support formats such as TIFF and PNG universally. 
 
 #### Example 6: Different versions of the same tool
 
 Occasionally, the Galaxy tool panel may feature duplicated versions of the same tool, even if their functionalities have undergone alterations. There are different reasons for this, from typos to the way tool names are displayed in the tool panel. 
 
 ## Conventions
-We acknowledge the existence of the IUC recommendations for tool names but decided for a somewhat different pattern,
+We acknowledge the existence of the [IUC recommendations(https://galaxy-iuc-standards.readthedocs.io/en/latest/) for tool names but decided on a somewhat different pattern,
 1. to avoid too long tool names due to the inclusion of tool suits, 
 2. to comply with the fact that many Galaxy tools in our community are thin tool wrappers around established tools (e.g., tool suites or other Conda packages), while 
 3. many others implement their main functionality directly within the wrapper.
@@ -186,7 +186,7 @@ We acknowledge the existence of the IUC recommendations for tool names but decid
 The conventions described below have a few limitations (see section [Discussion](#Discussion)).
 
 ### Naming
-Generally, the name of Galaxy tools in our community should be expressive and concise, while stating the purpose of the tool as precisely as possible. Consistency of the namings of Galaxy tools is important to ensure that they can be found easily. To maintain consistency, we consider phrasing names as imperatives a good practice, like for example “Analyze particles” or “Perform segmentation using watershed transformation”. An acknowledged exception from this rule are the names of tool wrappers of major tool suites, where the name of a tool wrapper should be chosen identically to the module or function of the tool which is wrapped (e.g., “MaskImage” in CellProfiler).
+Generally, the name of Galaxy tools in our community should be expressive and concise, while stating the purpose of the tool as precisely as possible. Consistency of the namings of Galaxy tools is important to ensure they can be found easily. To maintain consistency, we consider phrasing names as imperatives a good practice, like for example “Analyze particles” or “Perform segmentation using watershed transformation”. An acknowledged exception from this rule is the names of tool wrappers of major tool suites, where the name of a tool wrapper should be chosen identically to the module or function of the tool which is wrapped (e.g., “MaskImage” in CellProfiler).
 
 ### Tool description 
 If a Galaxy tool is a thin tool wrapper (e.g, part of a major tool suite), then the name of the wrapped tool (and only the name of the wrapped tool, subsequent to the term “with” as in “with Bioformats”) should be used as the description of the tool (further examples include “with CellProfiler”, “with ImageJ2”, “with ImageMagick”, “with SpyBOAT”, “with SuperDSM”). This ensures that the tool is found by typing the name of the wrapped tool into the “Search” field on Galaxy EU. The tool description should be empty if a tool is either not part of a major tool suite, or the main functionality of the tool is implemented in the wrapper.
@@ -197,7 +197,7 @@ We point out that there is a global list of precedential [Bio.tools](https://bio
 
 ## Tool annotation
 
-The annotations of tools within the Galaxy Image Community involves the use of the EDAM ontology and [Bio.tools](https://bio.tools/). To recognize the role of [BioImage Informatics Index (BIII)](https://biii.eu/) as the registry of tools, workflows, training, and example data for bioimage analysis [@citesAsAuthority:usesDataFrom:bioimageWorkflows], we agreed to use [BIII](https://biii.eu/), considering its use of annotations with EDAM Bioimaging.
+The annotations of tools within the Galaxy Image Community involve the use of the EDAM ontology and [Bio.tools](https://bio.tools/). To recognize the role of [BioImage Informatics Index (BIII)](https://biii.eu/) as the registry of tools, workflows, training, and example data for bioimage analysis [@citesAsAuthority:usesDataFrom:bioimageWorkflows], we agreed to use [BIII](https://biii.eu/), considering its use of annotations with EDAM Bioimaging.
 
 To fully reflect this decision, we included a new metadata field in the Galaxy tool wrappers that enables the annotation of tools using [BIII](https://biii.eu/) (see [PR](https://github.com/galaxyproject/galaxy/pull/16952)).
 
@@ -225,7 +225,7 @@ In addition, a tool to fetch image data directly from the [BioImage Archive (BIA
 
 The integration of AI-powered image analysis in Galaxy involved leveraging models from the [BioImage Model Zoo (BMZ)](https://bioimage.io/#/) [@citesAsAuthority:usesDataFrom:BMZ] and conducting an analysis of [ZeroCostDL4Mic](https://github.com/HenriquesLab/ZeroCostDL4Mic) dependencies. 
 
-We explored the possibility to consume models from the [BMZ](https://bioimage.io/#/) in Galaxy, with specific examples for live cell segmentation and nucleus segmentation boundary models. 
+We explored the possibility of consuming models from the [BMZ](https://bioimage.io/#/) in Galaxy, with specific examples for live cell segmentation and nucleus segmentation boundary models. 
 
 ## Community
 
@@ -245,17 +245,17 @@ Looking ahead, we plan to continue this work by collaborating closely with the G
 We welcome anyone interested, from experienced Galaxy tool developers and image analysts to those who are new to the field, to join our community and monthly meetings. 
 
 ### Improving conventions 
-We are aware of the following limitations of our conventions for tool naming, tool descriptions, tool and annotation (see section [Conventions](#Conventions)), which we seek to possibly address in the future:
+We are aware of the following limitations of our conventions for tool naming, tool descriptions, tool and annotation (see section [Conventions](#Conventions)), which we seek to address in the future:
 
 1. If a Galaxy tool has a [Bio.tools](https://bio.tools/) identifier included in its XML specification, then its EDAM operation annotation can be inherited from the Bio.tools annotation. The EDAM operations in Bio.tools might be precedential over the EDAM operations given in the XML specification of a Galaxy tool.
-2. Our main motivation for prominently exposing the name of the wrapped tool in the tool description has been to account for the fact that tools with similar functionality (and hence similar names) exist across different tool suites. However, they can also exist across different plugins within the same tool suite (such as ImageJ2). To also account for that, we might want to take the suggested scheme one step further and to also include the name of the corresponding plugin in the tool description (as in “with ImageJ2, bUnwrapJ”).
+2. Our main motivation for prominently exposing the name of the wrapped tool in the tool description has been to account for the fact that tools with similar functionality (and hence similar names) exist across different tool suites. However, they can also exist across different plugins within the same tool suite (such as ImageJ2). To account for that, we might want to take the suggested scheme one step further and include the name of the corresponding plugin in the tool description (as in “with ImageJ2, bUnwrapJ”).
 
 # Acknowledgements
 
 This work was developed as part of BioHackathon Europe 2023.
 We thank the contributions from Project 25 [@usesMethodIn:obtainsSupportFrom:project25].
 This work was supported by [ELIXIR](https://elixir-europe.org), the research infrastructure for life science data.
-The authors utilised the language model ChatGPT developed by OpenAI for assistance in the structuring and drafting of this text.
+The authors utilised the language model ChatGPT developed by OpenAI to assist in structuring and drafting this text.
 
 
 # References
