@@ -112,7 +112,7 @@ For the BioHackathon 2023, we set a number of multifaceted goals:
 # Results
 
 In this section, we discuss the achievements within the BioHackathon, aligning them with the project goals. We explore the progress made addressing conventions, tool renaming, tool annotation, and the identification of tools not available in Galaxy, together with image data management and image analysis tools.
-
+<! --
 ```mermaid
 graph TD;
     Landscape_Analysis[Landscape analysis] --> Tools_available_in_Galaxy[Tools available in Galaxy];
@@ -122,6 +122,7 @@ graph TD;
     Tools_not_available_in_Galaxy --> Image_Data_Management_Tools[Image data management Tools];
     Tools_not_available_in_Galaxy --> Image_Analysis_Tools[Image analysis tools];
 ```
+-->
 
 ## Landscape analysis of image analysis and image processing tools in Galaxy
 
