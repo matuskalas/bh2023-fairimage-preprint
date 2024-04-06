@@ -52,13 +52,13 @@ affiliations:
     index: 4
   - name: Euro-BioImaging ERIC Bio-Hub, European Molecular Biology Laboratory (EMBL) Heidelberg, Meyerhofstraße 1, 69117 Heidelberg, Germany
     index: 5
-  - name: 
+  - name: European Molecular Biology Laboratory (EMBL) Heidelberg, Meyerhofstraße 1, 69117 Heidelberg, Germany
     index: 6
-  - name: 
+  - name: Department of Computer Science, University of Freiburg, Georges-Köhler-Allee 106, 79110 Freiburg, Germany
     index: 7
-  - name: 
-    index: 8
   - name: Université Clermont Auvergne, AuBi platform, F-63000 Clermont-Ferrand, France 
+    index: 8
+  - name: Simula Research Laboratory, Oslo, Norway
     index: 9
 date: 4 April 2024
 cito-bibliography: paper.bib
