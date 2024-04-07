@@ -163,7 +163,7 @@ Some tools within the Galaxy ecosystem have similar purposes but often originate
 
 #### Example 5: Lack of tool interoperability
 
-Incompatibilities between tools, particularly concerning input formats and inconsistent tool IDs, were identified. For example, tools like _Count Objects_ historically accepted only TIFF inputs while others, like _Concatenate images_ exclusively accepted binary images without apparent justification. To enhance user experience and interoperability, a suggestion was made for tools to support formats such as TIFF and PNG universally. 
+Incompatibilities between tools were identified, particularly concerning input formats and inconsistent tool IDs. For example, tools like _Count Objects_ historically accepted only TIFF inputs, while others, like _Concatenate images_ exclusively accepted binary images without apparent justification. To enhance user experience and interoperability, a suggestion was made for tools to support formats such as TIFF and PNG universally. 
 
 #### Example 6: Different versions of the same tool
 
@@ -178,7 +178,7 @@ We acknowledge the existence of the [IUC recommendations](https://galaxy-iuc-sta
 The conventions described below have a few limitations (see section [Discussion](#Discussion)).
 
 ### Naming
-Generally, the name of Galaxy tools in our community should be expressive and concise, while stating the purpose of the tool as precisely as possible. Consistency of the namings of Galaxy tools is important to ensure they can be found easily. To maintain consistency, we consider phrasing names as imperatives a good practice, like for example “Analyze particles” or “Perform segmentation using watershed transformation”. An acknowledged exception from this rule is the names of tool wrappers of major tool suites, where the name of a tool wrapper should be chosen identically to the module or function of the tool which is wrapped (_e.g._, “MaskImage” in CellProfiler).
+Generally, the name of Galaxy tools in our community should be expressive and concise, while stating the purpose of the tool as precisely as possible. Consistency of the namings of Galaxy tools is important to ensure they can be found easily. To maintain consistency, we consider phrasing names as imperatives a good practice, such as “Analyze particles” or “Perform segmentation using watershed transformation”. An acknowledged exception from this rule is the names of tool wrappers of major tool suites, where the name of a tool wrapper should be chosen identically to the module or function of the tool which is wrapped (_e.g._, “MaskImage” in CellProfiler).
 
 ### Tool description 
 If a Galaxy tool is a thin tool wrapper (_e.g_, part of a major tool suite), then the name of the wrapped tool (and only the name of the wrapped tool, subsequent to the term “with” as in “with Bioformats”) should be used as the description of the tool (further examples include “with CellProfiler”, “with ImageJ2”, “with ImageMagick”, “with SpyBOAT”, “with SuperDSM”). This ensures that the tool is found by typing the name of the wrapped tool into the “Search” field on Galaxy EU. The tool description should be empty if a tool is either not part of a major tool suite, or the main functionality of the tool is implemented in the wrapper.
@@ -234,7 +234,7 @@ Looking ahead, we plan to continue this work by collaborating closely with the G
 
 ### Community development
 
-We welcome anyone interested, from experienced Galaxy tool developers and image analysts to those who are new to the field, to join our community and monthly meetings. 
+We welcome anyone interested, from experienced Galaxy tool developers and image analysts to those who are new to the field, to join our community (info@eurobioimaging.eu) and monthly meetings on the third Wednesday of the month at 4 pm CE(S)T. 
 
 ### Improving conventions 
 We are aware of the following limitations of our conventions for tool naming, tool descriptions, and annotation (see section [Conventions](#Conventions)), which we seek to address in the future:
