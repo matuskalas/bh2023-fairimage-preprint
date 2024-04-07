@@ -239,7 +239,7 @@ We welcome anyone interested, from experienced Galaxy tool developers and image 
 ### Improving conventions 
 We are aware of the following limitations of our conventions for tool naming, tool descriptions, and annotation (see section [Conventions](#Conventions)), which we seek to address in the future:
 
-1. If a Galaxy tool has a Bio.tools identifier included in its XML specification, then its EDAM operation annotation can be inherited from the Bio.tools record. The EDAM operations in Bio.tools might be precedential over the EDAM operations given in the XML specification of a Galaxy tool. However, depending on the evolving community guidelines, the precedence could also be the opposite.
+1. If a Galaxy tool has a Bio.tools identifier included in its XML specification, then its EDAM annotation can be inherited from the Bio.tools record. The EDAM annotations given in the XML specification of a Galaxy tool are precedential over the EDAM annotations in Bio.tools. However, depending on the evolving community guidelines, the precedence could change in the future.
 2. Our primary motivation for prominently exposing the name of the wrapped tool in the tool description has been to account for the fact that tools with similar functionality (and hence similar names) exist across different tool suites. However, they can also exist across different plugins within the same tool suite (such as ImageJ2). To account for that, we might want to take the suggested scheme one step further and include the name of the corresponding plugin in the tool description (as in “with ImageJ2, bUnwrapJ”).
 
 # Acknowledgements
